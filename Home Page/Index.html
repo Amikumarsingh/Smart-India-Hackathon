@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curtural Heritage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- A Bootstrap class that centers the content within a fixed-width container.  -->
+      <!-- It provides responsive padding and aligns the content centrally, adapting to various screen sizes.  -->
+      <div class="container">
+        <a class="navbar-brand" href="#">Heritage Connect</a>
+        <!-- this is button that turns into hamburger menu whenever required -->
+        <!-- this is done by using data-bs-target="#navbarNav" , this is the id of the unordered list (navigation links) which will collapse (on smaller screens) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- the id of this div used as the target(which will collapse) -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#heritage-sites">Heritage Sites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#culture">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#festivals">Festivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#food">Food</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1>Explore the Rich Culture & Heritage of Maharashtra</h1>
+        <p>
+          Discover the timeless history, traditions, and cultural vibrance of
+          the land of forts and festivals.
+        </p>
+      </div>
+    </header>
+
+    <!-- Heritage Sites Section -->
+    <section id="heritage-sites" class="container">
+      <h2 class="section-heading">Heritage Sites</h2>
+      <!-- here class="row" (of bootstrap) is used , it aligns elements in horizontal way using flexbox properties -->
+      <div class="row">
+        <!-- class="col-lg-4" defines a column spanning 4 out of the 12 available grid columns on large screens (lg)  -->
+        <div class="col-lg-4">
+          <div class="card heritage-card">
+            <img
+              src="
+              Ajanta Caves.jpg"
+              class="card-img-top"
+              alt="Ajanta Caves"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ajanta Caves</h5>
+              <p class="card-text">
+                A UNESCO World Heritage Site, famous for its rock-cut caves and
+                ancient Buddhist architecture.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card heritage-card">
+            <img
+              src="Shaniwar Wada.jpg"
+              class="card-img-top"
+              alt="Shaniwar Wada"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Shaniwar Wada</h5>
+              <p class="card-text">
+                A historical fort in Pune, known for its importance in Maratha
+                history.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card heritage-card">
+            <img
+              src="Ellora Caves.jpg"
+              class="card-img-top"
+              alt="Ellora Caves"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ellora Caves</h5>
+              <p class="card-text">
+                An archaeological site representing Buddhism, Hinduism, and
+                Jainism through its 34 rock-cut temples.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Culture Section -->
+    <!-- the py-5 class sets Padding in Y direction , the 5 represents unit of padding (unit is based on bootstraps spacing scale) -->
+    <section id="culture" class="bg-light py-5">
+      <div class="container">
+        <h2 class="section-heading">Culture</h2>
+        <p class="text-center">
+          Maharashtra is a land of diverse cultures, ranging from classical
+          music and dance to traditional arts like Warli and Lavani.
+        </p>
+      </div>
+    </section>
+
+    <!-- Festivals Section -->
+    <section id="festivals" class="container">
+      <h2 class="section-heading">Festivals</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Ganesh Chaturthi</h5>
+              <p class="card-text">
+                The most popular festival of Maharashtra, celebrating the birth
+                of Lord Ganesha with grandeur and devotion.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Diwali</h5>
+              <p class="card-text">
+                Known as the festival of lights, Diwali marks the victory of
+                good over evil with fireworks and festivities.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Makar Sankranti</h5>
+              <p class="card-text">
+                A festival dedicated to the Sun God, celebrated with kite flying
+                and traditional sweets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food Section -->
+    <section id="food" class="bg-light py-5">
+      <div class="container">
+        <h2 class="section-heading">Traditional Food</h2>
+        <p class="text-center">
+          Experience the authentic taste of Maharashtra with its famous dishes
+          like Vada Pav, Puran Poli, and Misal Pav.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        © 2024 Maharashtra Heritage | Designed with love for cultural
+        preservation
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
